@@ -1,6 +1,14 @@
+cards==1.0.0
+click==7.1.2
+colorama==0.4.6
+commonmark==0.9.1
 exceptiongroup==1.1.1
 iniconfig==2.0.0
 packaging==23.1
 pluggy==1.0.0
+Pygments==2.15.1
 pytest==7.3.1
+rich==10.7.0
+tinydb==4.5.1
 tomli==2.0.1
+typer==0.3.2
