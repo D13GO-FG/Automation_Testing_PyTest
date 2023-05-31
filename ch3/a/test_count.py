@@ -2,6 +2,10 @@ import cards
 
 # pytest --setup-show test_count.py
 
+# Finding Where Fixtures Are Defined
+# pytest --fixtures -v
+# pytest --fixtures-per-test test_count.py::test_empty
+
 
 def test_empty(cards_db):
     assert cards_db.count() == 0
