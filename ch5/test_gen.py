@@ -27,3 +27,10 @@ def test_finish(cards_db, start_state):
     cards_db.finish(index)
     card = cards_db.get_card(index)
     assert card.state == "done"
+
+
+# ldiego@LAPTOP-KAQJQP02:~/project-python/fundamentals_pytest/ch5$ pytest -v
+# pytest -v -k todo  --> run all of the "todo" cases
+# pytest -v -k "todo and not(play or create)"  --> if you want to eliminate the test cases with "play" or "create".
+# pytest -v "test_func_param.py::test_finish"  --> Select a single test function
+# pytest -v "test_func_param.py::test_finish[write a book-done]"  --> select one test case
