@@ -8,6 +8,13 @@ from cards import Card, InvalidCardId
 # pytest -v -m smoke
 # pytest -v -m finish
 
+
+# Using “and,” “or,” “not,” and Parentheses with Markers
+# pytest -v -m "finish and exception"
+# pytest -v -m "finish and not smoke"
+# pytest -v -m "(exception or smoke) and (not finish)"
+# pytest -v -m smoke -k "not TestFinish"
+
 pytestmark = pytest.mark.finish
 
 
