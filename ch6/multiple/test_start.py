@@ -4,6 +4,8 @@ import pytest
 import cards
 from cards import Card, InvalidCardId
 
+# pytest --markers
+
 
 @pytest.fixture()
 def cards_db():
